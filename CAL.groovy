@@ -9,7 +9,7 @@ pipeline{
     }
     stage('deploying code') {
         steps{
-            sh 'sudo mv /var/lib/jenkins/workspace/agentB/index.html /var/www/html/CALYX/'
+            sh 'sudo mv /var/lib/jenkins/workspace/agentB/* /var/www/html/CALYX/'
         }
     }   
     stage ('restarting nginx'){
